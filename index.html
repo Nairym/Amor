@@ -4,169 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Carta para mi Ximena</title>
-    <style>
-        :root {
-            --bg1: #0f1724;
-            --accent: #ff6b8a;
-        }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            font-family: "Inter", system-ui;
-            background: radial-gradient(1200px 600px at 10% 10%, rgba(255, 107, 138, 0.12), transparent),
-                linear-gradient(180deg, var(--bg1), #071022 60%);
-            color: #f8f7fb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 28px;
-            overflow: hidden;
-        }
-
-        .card {
-            width: min(900px, 96%);
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 18px;
-            padding: 28px;
-            box-shadow: 0 8px 30px rgba(2, 6, 23, 0.7);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .logo-heart {
-            width: 64px;
-            height: 64px;
-            border-radius: 12px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, #ff6b8a, #ff9ec1);
-            box-shadow: 0 6px 18px rgba(255, 107, 138, 0.14);
-            transform: rotate(-10deg);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 22px;
-            color: #fff
-        }
-
-        .letter {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 12px;
-            padding: 22px;
-            margin-top: 14px;
-            font-family: "Georgia", serif;
-            font-size: 17px;
-            line-height: 1.7;
-            min-height: 200px;
-            position: relative;
-            z-index: 2
-        }
-
-        .typed {
-            white-space: pre-wrap;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 10px;
-            height: 20px;
-            background: var(--accent);
-            margin-left: 6px;
-            border-radius: 3px;
-            animation: blink 1s steps(2, start) infinite;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0
-            }
-        }
-
-        footer {
-            text-align: right;
-            color: rgba(255, 255, 255, 0.6);
-            margin-top: 12px;
-            font-size: 14px
-        }
-
-        /* corazones y melodys */
-        .hearts,
-        .melodys {
-            pointer-events: none;
-            position: absolute;
-            inset: 0;
-            overflow: hidden;
-        }
-
-        .hearts i,
-        .melodys img {
-            position: absolute;
-            display: block;
-            animation: floatUp linear infinite;
-        }
-
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0) scale(0.9);
-                opacity: 0.95
-            }
-
-            50% {
-                transform: translateY(-50px) scale(1.05);
-                opacity: 1
-            }
-
-            100% {
-                transform: translateY(-420px) scale(1);
-                opacity: 0
-            }
-        }
-
-        /* Ajustes responsivos */
-        @media (max-width: 600px) {
-            body {
-                padding: 12px;
-                background: radial-gradient(800px 400px at 50% 20%, rgba(255, 107, 138, 0.12), transparent),
-                    linear-gradient(180deg, #0f1724, #071022 70%);
-            }
-
-            .card {
-                padding: 18px;
-                width: 100%;
-                border-radius: 14px;
-            }
-
-            h1 {
-                font-size: 18px;
-            }
-
-            .letter {
-                font-size: 15px;
-                line-height: 1.6;
-            }
-
-            footer {
-                font-size: 12px;
-            }
-
-            /* Ajustar corazones y melodys */
-            .hearts i,
-            .melodys img {
-                opacity: 0.7;
-                animation-duration: 7s !important;
-            }
-
-            .logo-heart {
-                width: 52px;
-                height: 52px;
-            }
-        }
-    </style>
+    <title>Carta para mi amor</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -174,75 +13,25 @@
         <div class="melodys" id="melodys"></div>
         <div class="hearts" id="hearts"></div>
 
-        <header style="display:flex;gap:16px;align-items:center;margin-bottom:12px;">
-            <div class="logo-heart">
-                <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
-                    <path
-                        d="M12 21s-7.5-4.9-10-8.1C-0.2 7.7 4.2 3 8.7 5.1 10.5 6 12 7.6 12 7.6s1.5-1.6 3.3-2.5C19.8 3 24.2 7.7 22 12.9 19.5 16.1 12 21 12 21z" />
-                </svg>
-            </div>
-            <h1>Para Ximena</h1>
+        <header class="header">
+            <div class="logo-heart">💖</div>
+            <h1>Para Mi Amor</h1>
         </header>
 
         <div class="letter">
             <div class="typed" id="typed"></div><span class="cursor" id="cursor"></span>
         </div>
 
-        <footer>— Con todo mi cariño, Nicolás Astudillo</footer>
+        <footer>— Con todo mi cariño, Nicolas Astudillo</footer>
     </div>
 
-    <script>
-        const message = `Amor mío,
+    <nav class="menu">
+        <a href="carrusel.html">📸 Carrusel</a>
+        <a href="botones.html">💗 ¿Me Amas?</a>
+        <a href="gustos.html">🌸 Lo que amo de ti</a>
+    </nav>
 
-Como ya sabes, quiero hacerte la mujer más feliz del mundo.
-Quiero caminar contigo en cada paso, ser tu fuerza en los días difíciles
-y compartir contigo la alegría de cada logro.
-
-Mi niña, eres mi razón, mi paz y mi sueño cumplido.
-Gracias por estar en mi vida, por ser tú, por hacerme sonreír.
-
-Te amo, con todo mi corazón. 💖`;
-
-        const typedEl = document.getElementById('typed'), cursor = document.getElementById('cursor');
-        function typeMsg(txt) {
-            let i = 0; function step() {
-                if (i >= txt.length) { cursor.style.display = 'none'; return; }
-                typedEl.textContent += txt[i++]; setTimeout(step, txt[i - 1] === '\n' ? 200 : 35);
-            } step();
-        }
-        window.addEventListener('load', () => typeMsg(message));
-
-        /* corazones */
-        const hearts = document.getElementById('hearts');
-        function spawnHeart() {
-            const i = document.createElement('i');
-            const s = 14 + Math.random() * 30;
-            i.style.width = s + 'px'; i.style.height = s + 'px';
-            i.style.left = (5 + Math.random() * 90) + '%';
-            const d = 4 + Math.random() * 5; const del = Math.random() * 2;
-            i.style.animationDuration = d + 's'; i.style.animationDelay = del + 's';
-            i.innerHTML = `<svg viewBox="0 0 24 24" fill="url(#g)">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff6b8a"/><stop offset="1" stop-color="#ff9ec1"/></linearGradient></defs>
-  <path d="M12 21s-7.5-4.9-10-8.1C-0.2 7.7 4.2 3 8.7 5.1 10.5 6 12 7.6 12 7.6s1.5-1.6 3.3-2.5C19.8 3 24.2 7.7 22 12.9 19.5 16.1 12 21 12 21z"/></svg>`;
-            hearts.appendChild(i); setTimeout(() => i.remove(), 12000);
-        }
-        setInterval(() => { if (Math.random() < 0.7) spawnHeart(); }, 600);
-
-        /* My Melody flotantes */
-        const melodys = document.getElementById('melodys');
-        function spawnMelody() {
-            const img = document.createElement('img');
-            const size = 50 + Math.random() * 40;
-            img.src = "My_melody.png";
-            img.style.width = size + "px";
-            img.style.left = (Math.random() * 90) + "%";
-            img.style.animationDuration = (8 + Math.random() * 6) + "s";
-            img.style.animationDelay = (Math.random() * 3) + "s";
-            melodys.appendChild(img);
-            setTimeout(() => img.remove(), 14000);
-        }
-        setInterval(() => { if (Math.random() < 0.4) spawnMelody(); }, 1500);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
