@@ -203,3 +203,43 @@ nav.menu a:hover {
   background: rgba(255, 255, 255, 0.35);
   transform: scale(1.05);
 }
+
+/* 💘 Sección de gustos */
+.gustos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.gusto {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.gusto:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.add-btn {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-btn:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: scale(1.05);
+}
