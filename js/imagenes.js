@@ -64,7 +64,7 @@ function meAmas() {
   const btnSi = document.getElementById("btnSi");
   const btnNo = document.getElementById("btnNo");
 
-  pregunta.innerHTML = "¡Sabía que sí me amabas! 💞🥰";
+  pregunta.innerHTML = "¡Sabía que sí me amabas! 💞🥰 Pero igual yo te amo muchísimo más, mi vida. 💖";
   img.classList.add("fade");
 
   setTimeout(() => {

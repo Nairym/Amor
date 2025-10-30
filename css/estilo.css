@@ -6,10 +6,10 @@ body {
   color: #fff;
   background: radial-gradient(
     circle at top left,
-    #ffb6c1 0%,
-    #ff9ec1 25%,
-    #ffc0cb 60%,
-    #ffd6e0 100%
+    #b30059 0%,
+    /* vino intenso */ #d63384 30%,
+    /* fucsia profundo */ #e75480 60%,
+    /* rosa pasión */ #ff8fa3 100% /* rosado cálido */
   );
   overflow-x: hidden;
   overflow-y: auto;

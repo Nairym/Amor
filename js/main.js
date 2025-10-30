@@ -1,13 +1,16 @@
-const message = `💗 Amor mío,
+const message = `💗 Mi amor,
 
-Como ya sabes, quiero hacerte la mujer más feliz del mundo 🌷.  
-Quiero caminar contigo en cada paso 🕊️, ser tu fuerza en los días difíciles 🌙  
-y compartir contigo la alegría de cada amanecer 🌅.
+Con el paso del tiempo me doy cuenta de lo profundamente maravillosa y fuerte que eres: sensible, amable, amorosa, tierna, coqueta, trabajadora... en fin, un amor de persona, exactamente lo que siempre buscaba.
 
-Mi niña, eres mi razón, mi calma y mi sueño cumplido 💞.  
-Gracias por existir, por ser mi luz, por hacerme sentir amor verdadero ✨.
+Estoy muy feliz de haberte encontrado después de tanto tiempo de búsqueda, y me alegra profundamente que me hayas correspondido. Amor, mi propósito sigue en pie: hacerte la mujer más feliz del mundo.
+Aun con nuestros altos y bajos, con dinero o sin él, quiero que vivas alegremente, sin cargas, o al menos con la tranquilidad de saber que siempre estaré aquí para ayudarte a llevarlas.
 
-Te amo, hoy y siempre 💖.`;
+Eres una excelente mujer, y me siento inmensamente orgulloso de mi princesa. Sé que lograrás cosas grandes si sigues siendo como eres, y quiero que tengas presente que siempre estaré a tu lado, apoyándote y motivándote a seguir adelante.
+
+Te amo mucho, mi chiquita. Realmente quiero compartir mi vida contigo, en cada paso, en cada risa y en cada sueño.
+
+Con todo mi amor,
+Nicolás Astudillo 💞`;
 
 const typedEl = document.getElementById("typed");
 const cursor = document.getElementById("cursor");
